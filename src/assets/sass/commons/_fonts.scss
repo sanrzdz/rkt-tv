@@ -1,0 +1,17 @@
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url("../fonts/NotoSans-Regular.eot#iefix") format("embedded-opentype");
+    src: url("../fonts/NotoSans-Regular.otf") format("opentype"),
+        url("../fonts/NotoSans-Regular.woff") format("woff"),
+        url("../fonts/NotoSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url("../fonts/NotoSans-Bold.eot#iefix") format("embedded-opentype");
+    src: url("../fonts/NotoSans-Bold.otf") format("opentype"),
+        url("../fonts/NotoSans-Bold.woff") format("woff"),
+        url("../fonts/NotoSans-Bold.ttf") format("truetype");
+    font-weight: 600;
+}

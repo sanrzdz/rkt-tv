@@ -1,0 +1,17 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 560px,
+    md: 1025px,
+    lg: 1140px,
+    xl: 1680px
+) !default;
+
+$yellow:  #ffe300;
+
+$text-shadow: 0 1px 1px rgba(0,0,0,.8);
+
+$font-size-base: 14px; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+$primary-font: NotoSans-Regular,Arial,sans-serif;
+

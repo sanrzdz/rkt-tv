@@ -1,0 +1,47 @@
+.btn {
+    cursor: pointer;
+
+    &:hover * {
+        stroke: $yellow;
+    }
+
+    &__label {
+        .video__back__wrapper & {
+            background-color: lighten($gray-200, 10%);
+            color: $gray-500;
+            padding: 6px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+
+    &--slider {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        width: 50px;
+        z-index: 200;
+        color: $white;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        z-index: 4;
+
+        &[data-ishidden="true"] {
+            display: none;
+        }
+
+        &--back {
+            left: 0;
+            background: linear-gradient(to right, rgba(23, 23, 23, 0.95) 0, transparent 100%);
+        }
+        &--next {
+            right: 0;
+            background: linear-gradient(to left, rgba(23, 23, 23, 0.95) 0, transparent 100%);
+        }
+    }
+}

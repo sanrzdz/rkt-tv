@@ -1,0 +1,26 @@
+.video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+
+    &__player {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    &__back__wrapper {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 200;
+        min-height: 50px;
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+    }
+}

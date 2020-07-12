@@ -1,0 +1,33 @@
+.scrollable {
+    position: relative;
+    min-width: 100%;
+}
+
+.scrollable__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    z-index: 200;
+    color: #fff;
+    cursor: pointer;
+    
+    &[data-ishidden="true"] {
+        display: none;
+    }
+}
+
+.scrollable__arrow--back {
+    left: 0;
+    background: linear-gradient(to right,rgba(23,23,23,.95) 0,transparent 100%);
+}
+.scrollable__arrow--next {
+    right: 0;
+    background: linear-gradient(to left,rgba(23,23,23,.95) 0,transparent 100%);
+}
+
+.scrollable__list {
+    transition: transform 1s;
+}

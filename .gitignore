@@ -1,0 +1,6 @@
+.idea/
+dist/
+node_modules/
+src/**/*.jsx
+src/**/__snapshots__
+

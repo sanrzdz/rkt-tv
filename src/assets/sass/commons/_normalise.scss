@@ -1,0 +1,35 @@
+@at-root {
+    @-ms-viewport {
+        width: device-width;
+    } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+    margin: 0px;
+    font-family: $primary-font;
+    color: $white;
+    background-color: $gray-500;
+
+    overflow-x: hidden;
+}
+
+a,
+p,
+h1 {
+    font-size: 14px;
+    line-height: 1;
+    color: $white;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

@@ -1,0 +1,41 @@
+@import "./commons/reset";
+
+@import "./commons/fonts";
+@import "./commons/colors";
+@import "./commons/variables";
+
+@import "./commons/normalise";
+@import "./mixins/mixins";
+
+@import "./components/components";
+
+#root {
+    display: block !important;
+    padding-bottom: 50px;
+    padding-top: 0;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 1680px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+        margin: 0 auto;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+    }
+}
+
+.content__wrapper {
+    background-color: $gray-400;
+    padding-top: 30px;
+
+    &--detail-page {
+        @include media-breakpoint-up(md) {
+            margin-top: -30px;
+        }
+    }
+}
